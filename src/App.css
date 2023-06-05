@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tsukimi Rounded', sans-serif;
+  background-color: #ffd6ff;
+  padding: 100px 10%;
+  /* text-align: center; */
+}
+
+.heading {
+  color: #f72585;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.form {
+  display: flex;
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+}
+
+.input_box {
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 10px;
+  transition: 0.2s;
+  background-color: white;
+  border-radius: 50px;
+  padding: 16px 15px;
+  box-shadow: inset 0 0 5px #ffd6ff;
+}
+
+input {
+  font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+::placeholder {
+  color: #212529;
+  font-family: 'Tsukimi Rounded', sans-serif;
+  font-weight: 600;
+}
+
+.input_submit {
+  position: absolute;
+  background-color: #f72585;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+  right: 25px;
+  top: 8px;
+  box-shadow: 0 0 10px #646264;
+  transition: all 250ms ease-in-out;
+}
+
+.input_submit:hover {
+  background-color: #f561a4;
+} 
+
+.input_submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+
+.input_box:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 15px;
+  }
+}
